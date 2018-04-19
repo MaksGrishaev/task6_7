@@ -33,7 +33,7 @@ echo "
 ln -s /etc/apache2/sites-available/$HOSTNAME.conf /etc/apache2/sites-enabled/$HOSTNAME.conf
 
 echo "Listen $APACHE_VLAN_IP:80" > /etc/apache2/ports.conf
-sed -i "/# Global configuration/a \ServerName $HOSTNAME" /etc/apache2/apache2.conf
+#sed -i "/# Global configuration/a \ServerName $HOSTNAME" /etc/apache2/apache2.conf
 
 systemctl restart apache2
 
